@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <center><h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(88, 38, 38);"> welcome to the {{context.name}}</h1></center>
+
+    <div class="card bg-dark text-white">
+        <img src="{% static 'images/ss3.jpeg'%}" class="card-img" alt="..." height="300px">
+        <div class="card-img-overlay">
+          <h3 style="color: rgb(72, 19, 19);">Delicious Almond Cake</h3>
+        </div>
+      </div>
+      <br>
+      <div class="card-group" style="margin-left: 5px;">
+        <div class="card">
+          <img src="{% static 'images/c8.jpg'%}" class="card-img-top" alt="..." width="250px" height="250px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting  lead-in to additional content.</p>
+          </div>
+         
+        </div>
+        <div class="card" style="margin-left: 5px;">
+          <img src="{% static 'images/c9.jpg'%}" class="card-img-top" alt="..." width="250px" height="250px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+         
+        </div>
+        <div class="card" style="margin-left: 5px;">
+          <img src="{% static 'images/cc4.jpeg'%}" class="card-img-top" alt="..." width="250px" height="250px" >
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          
+        </div>
+      </div>
+      <br>
+      <div class="card-group" style="margin-left: 5px;">
+        <div class="card">
+          <img src="{% static 'images/c4.jpeg'%}" class="card-img-top" alt="..." width="250px" height="250px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting  lead-in to additional content.</p>
+          </div>
+         
+        </div>
+        <div class="card" style="margin-left: 5px;">
+          <img src="{% static 'images/c2.jpg'%}" class="card-img-top" alt="..." width="250px" height="250px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+         
+        </div>
+        <div class="card" style="margin-left: 5px;">
+          <img src="{% static 'images/c3.jpg'%}" class="card-img-top" alt="..." width="250px" height="250px" >
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          
+        </div>
+      </div>
+      <br>
+    {% endblock %}
+
+</body>
+</html>

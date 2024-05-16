@@ -15,6 +15,11 @@
     <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
         <h1 style="color:palevioletred">Online Cake Shop</h1>
         <ul class="nav nav-pills">
+          {% if context.logout%}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Logout</a>
+          </li>
+          {% else %}
           <li class="nav-item">
             <a class="nav-link" href="{% url 'home' %}">Home</a>
           </li>
@@ -30,7 +35,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'login' %}">Login</a>
           </li>
-         
+          {% endif %}
         </ul>
       </nav>
     {%block content%}
